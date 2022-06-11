@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Diabetes.html</title>
+    <link rel="stylesheet" href="./css/Diabetes.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="./index.html">
+            <img
+              class="logo"
+              src="./images/logo.jpg"
+              alt="logobrand"
+              height="70px"
+              width="140px"
+            />
+          </a>
+        </li>
+
+        <div class="navright">
+          <li><a href="./MLinHealthCare.html">ML in healthCare</a></li>
+          <li><a href="./Diseases.html">SneakPeak into Diseases</a></li>
+          <li><a href="./AboutTeam.html">About our Team</a></li>
+        </div>
+      </ul>
+    </div>
+
+    <div class="content">
+      <fieldset class="main">
+        <legend>Enter the vital Parameters</legend>
+        <div>
+          <label for="Age">Age: </label>
+          <input type="number" name="Age" id="Age" />
+        </div>
+        <div>
+          <label for="Sex">Sex:(0-M/1-F) </label>
+          <input type="number" name="Sex" id="Sex" min="0" max="1" />
+        </div>
+        <div>
+          <label for="Polydipsia">Polydipsia:(0/1) </label>
+          <input
+            type="number"
+            name="Polydipsia"
+            id="Polydipsia"
+            min="0"
+            max="1"
+          />
+        </div>
+        <div>
+          <label for="sudden weight loss">Sudden Weight Loss:(0/1) </label>
+          <input
+            type="number"
+            name="sudden weight loss"
+            id="sudden weight loss"
+            min="0"
+            max="1"
+          />
+        </div>
+        <div>
+          <label for="weakness">Weakness: (0/1) </label>
+          <input type="number" name="weakness" id="weakness" min="0" max="1" />
+        </div>
+        <div>
+          <label for="Polyphagia">Polyphagia:(0/1) </label>
+          <input
+            type="number"
+            name="Polyphagia"
+            id="Polyphagia"
+            min="0"
+            max="1"
+          />
+        </div>
+        <div>
+          <label for="visual blurring">Visual blurring:(0/1) </label>
+          <input
+            type="number"
+            name="visual blurring"
+            id="visual blurring"
+            min="0"
+            max="1"
+          />
+        </div>
+        <div>
+          <label for="Itching">Itching:(0/1) </label>
+          <input type="number" name="Itching" id="Itching" min="0" max="1" />
+        </div>
+        <div>
+          <label for="Irritability">Irritability:(0/1) </label>
+          <input
+            type="number"
+            name="Irritability"
+            id="Irritability"
+            min="0"
+            max="1"
+          />
+        </div>
+        <div>
+          <label for="delayed healing">Delayed healing: (0/1) </label>
+          <input
+            type="number"
+            name="delayed healing"
+            id="delayed healing"
+            min="0"
+            max="1"
+          />
+        </div>
+        <div>
+          <label for="muscle stiffness">Muscle Stiffness: (0/1) </label>
+          <input
+            type="number"
+            name="muscle stiffness"
+            id="muscle stiffness"
+            min="0"
+            max="1"
+          />
+        </div>
+        <div>
+          <label for="Alopecia">Alopecia: (0/1) </label>
+          <input type="number" name="Alopecia" id="Alopecia" min="0" max="1" />
+        </div>
+        <div>
+          <label for="Obesity">Obesity: (0/1) </label>
+          <input type="number" name="Obesity" id="Obesity" min="0" max="1" />
+        </div>
+        <div>
+          <label for="BMI">BMI: </label>
+          <input type="number" name="BMI" id="BMI" />
+        </div>
+        <button type="submit" class="diabPred">Predict</button>
+
+        <div>
+          <h2 class="resDiabPred"></h2>
+        </div>
+      </fieldset>
+    </div>
+
+    <script src="Diabetes.js"></script>
+    <script src="name.js"></script>
+  </body>
+</html>

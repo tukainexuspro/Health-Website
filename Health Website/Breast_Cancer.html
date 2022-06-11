@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>B_Cancer.html</title>
+    <link rel="stylesheet" href="./css/Breast_Cancer.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="./index.html">
+            <img
+              class="logo"
+              src="./images/logo.jpg"
+              alt="logobrand"
+              height="70px"
+              width="140px"
+            />
+          </a>
+        </li>
+
+        <div class="navright">
+          <li><a href="./MLinHealthCare.html">ML in healthCare</a></li>
+          <li><a href="./Diseases.html">SneakPeak into Diseases</a></li>
+          <li><a href="./AboutTeam.html">About our Team</a></li>
+        </div>
+      </ul>
+    </div>
+
+    <div class="content">
+      <fieldset class="main">
+        <legend>Enter the Vital Parameters</legend>
+        <div>
+          <label for="radius_mean">Radius mean:</label>
+          <input type="number" name="radius_mean" id="radius_mean" />
+        </div>
+        <div>
+          <label for="texture_mean">Texture mean:</label>
+          <input type="number" name="texture_mean" id="texture_mean" />
+        </div>
+        <div>
+          <label for="perimeter_mean">Perimeter mean:</label>
+          <input type="number" name="perimeter_mean" id="perimeter_mean" />
+        </div>
+        <div>
+          <label for="area_mean">Area mean:</label>
+          <input type="number" name="area_mean" id="area_mean" />
+        </div>
+        <div>
+          <label for="compactness_mean">Compactness mean:</label>
+          <input type="number" name="compactness_mean" id="compactness_mean" />
+        </div>
+        <div>
+          <label for="concavity_mean">Concavity mean:</label>
+          <input type="number" name="concavity_mean" id="concavity_mean" />
+        </div>
+        <div>
+          <label for="concave points_mean">Concave points mean:</label>
+          <input
+            type="number"
+            name="concave points_mean"
+            id="concave points_mean"
+          />
+        </div>
+        <button type="submit" class="diabPred">Predict</button>
+
+        <div>
+          <h2 class="resDiabPred"></h2>
+        </div>
+      </fieldset>
+    </div>
+
+    <script src="Breast_Cancer.js"></script>
+  </body>
+</html>

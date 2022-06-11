@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Heart.html</title>
+    <link rel="stylesheet" href="./css/Heart.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li>
+          <a href="./index.html">
+            <img
+              class="logo"
+              src="./images/logo.jpg"
+              alt="logobrand"
+              height="70px"
+              width="140px"
+            />
+          </a>
+        </li>
+
+        <div class="navright">
+          <li><a href="./MLinHealthCare.html">ML in healthCare</a></li>
+          <li><a href="./Diseases.html">SneakPeak into Diseases</a></li>
+          <li><a href="./AboutTeam.html">About our Team</a></li>
+        </div>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div class="piece">
+        <fieldset class="info">
+          <legend>Information</legend>
+          <p>age</p>
+          <p>sex</p>
+          <p>chest pain type (4 values)</p>
+          <p>resting blood pressure</p>
+          <p>serum cholestoral in mg/dl</p>
+          <p>fasting blood sugar > 120 mg/dl</p>
+          <p>resting electrocardiographic results (values 0,1,2)</p>
+          <p>maximum heart rate achieved</p>
+          <p>exercise induced angina</p>
+          <p>oldpeak = ST depression induced by exercise relative to rest</p>
+          <p>the slope of the peak exercise ST segment</p>
+          <p>number of major vessels (0-3) colored by flourosopy</p>
+          <p>thal: 0 = normal; 1 = fixed defect; 2 = reversable defect</p>
+        </fieldset>
+      </div>
+      <div class="piece">
+        <fieldset class="data">
+          <legend>Enter the vital Parameters</legend>
+          <div>
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age" />
+          </div>
+          <div>
+            <label for="sex:">Sex:(0-F/1-M)</label>
+            <input type="number" name="sex:" id="sex:" />
+          </div>
+          <div>
+            <label for="cp:">cp:</label>
+            <input type="number" name="cp:" id="cp:" />
+          </div>
+          <div>
+            <label for="trestbps">trestbps:</label>
+            <input type="number" name="trestbps" id="trestbps" />
+          </div>
+          <div>
+            <label for="chol:">chol:</label>
+            <input type="number" name="chol:" id="chol:" />
+          </div>
+          <div>
+            <label for="fbs">fbs:</label>
+            <input type="number" name="fbs" id="fbs" />
+          </div>
+          <div>
+            <label for="restecg">restecg:</label>
+            <input type="number" name="restecg" id="restecg" />
+          </div>
+          <div>
+            <label for="thalach">thalach: </label>
+            <input type="number" name="thalach" id="thalach" />
+          </div>
+          <div>
+            <label for="exang">exang:</label>
+            <input type="number" name="exang" id="exang" />
+          </div>
+          <div>
+            <label for="oldpeak">oldpeak:</label>
+            <input type="number" name="oldpeak" id="oldpeak" />
+          </div>
+          <button type="submit" class="diabPred">Predict</button>
+
+          <div>
+            <h2 class="resDiabPred"></h2>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+
+    <script src="Heart.js"></script>
+  </body>
+</html>
